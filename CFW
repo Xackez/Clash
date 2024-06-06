@@ -219,6 +219,7 @@ rule-providers:
 
 rules:
   # - SCRIPT,quic,REJECT
+  - RULE-SET,reject,REJECT
   # YouTube
   - GEOSITE,youtube,YouTube
   # Netflix
