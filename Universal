@@ -1,0 +1,296 @@
+proxy-providers:
+  yiyuan:
+    type: http
+    url: https://sub.id9.cc/sub?target=clash&new_name=true&url=https%3A%2F%2Fsub2.smallstrawberry.com%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3D954b648f6fbe4b209795b9e2f5bbf2e1&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini
+    interval: 86400
+    filter: ^(?!.*(剩余|群组|到期|每月|官网|一元)).*
+  yifen:
+    type: http
+    url: https://www.yfjc.xyz/api/v1/client/subscribe?token=3b04f7cf400b0b4df6798dd7659fcc7e
+    interval: 86400
+    filter: ^(?!.*(剩余|群组|到期|每月|官网|一元)).*
+  nanoport:
+    type: http
+    url: https://sub.id9.cc/sub?target=clash&new_name=true&url=https%3A%2F%2Fnano.nachoneko.cn%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3D2d502ca97e332c53ff350460a93e08d6&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini
+    interval: 86400
+    filter: ^(?!.*(剩余|群组|到期|每月|官网|一元)).*
+
+proxy-groups:
+  - name: PROXY
+    type: select
+    proxies:
+      - 自动选择
+      - 手动切换
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
+      - 🇸🇬 新加坡
+      - 🇯🇵 日本
+      - 🇰🇷 韩国
+      - 🇺🇲 美国
+      - DIRECT
+        
+  - name: YouTube
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/YouTube.png
+    type: select
+    proxies:
+      - 自动选择
+      - 手动切换
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
+      - 🇸🇬 新加坡
+      - 🇯🇵 日本
+      - 🇰🇷 韩国
+      - 🇺🇲 美国
+      - DIRECT
+ 
+  - name: Netflix
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Netflix.png
+    type: select
+    proxies:
+      - 自动选择
+      - 手动切换
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
+      - 🇸🇬 新加坡
+      - 🇯🇵 日本
+      - 🇰🇷 韩国
+      - 🇺🇲 美国
+      - DIRECT
+
+  - name: TikTok
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/TikTok.png
+    type: select
+    proxies:
+      - 自动选择
+      - 手动切换
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
+      - 🇸🇬 新加坡
+      - 🇯🇵 日本
+      - 🇰🇷 韩国
+      - 🇺🇲 美国
+      - DIRECT
+ 
+  - name: Disney+
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Disney%2B.png
+    type: select
+    proxies:
+      - 自动选择
+      - 手动切换
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
+      - 🇸🇬 新加坡
+      - 🇯🇵 日本
+      - 🇰🇷 韩国
+      - 🇺🇲 美国
+      - DIRECT
+
+  - name: OpenAI
+    icon: 
+    type: select
+    proxies:
+      - 自动选择
+      - 手动切换
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
+      - 🇸🇬 新加坡
+      - 🇯🇵 日本
+      - 🇰🇷 韩国
+      - 🇺🇲 美国
+      - DIRECT
+
+  - name: Speedtest
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Speedtest.png
+    type: select
+    proxies:
+      - 自动选择
+      - 手动切换
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
+      - 🇸🇬 新加坡
+      - 🇯🇵 日本
+      - 🇰🇷 韩国
+      - 🇺🇲 美国
+      - DIRECT
+
+  - name: 🇭🇰 香港
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Hong_Kong.png
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    filter: 香港|港
+    use:
+      - nanoport
+      - yiyuan
+      - yifen
+  
+  - name: 🇹🇼 台湾
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Taiwan.png
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    filter: 台湾|台
+    use:
+      - nanoport
+      - yiyuan
+      - yifen
+  
+  - name: 🇸🇬 新加坡
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Singapore.png
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    filter: 狮城|新加坡
+    use:
+      - nanoport
+      - yiyuan
+      - yifen
+  
+  - name: 🇯🇵 日本
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Japan.png
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    filter: 日本
+    use:
+      - nanoport
+      - yiyuan
+      - yifen
+  
+  - name: 🇰🇷 韩国
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Korea.png
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    filter: 韩国
+    use:
+      - nanoport
+      - yiyuan
+      - yifen
+  
+  - name: 🇺🇲 美国
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/United_States.png
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    filter: 美国
+    use:
+      - nanoport
+      - yiyuan
+      - yifen
+
+  - name: 自动选择
+    type: url-test
+    interval: 60
+    use:
+      - nanoport
+      - yiyuan
+      - yifen
+  
+  - name: 手动切换
+    type: select
+    proxies:
+      - yiyuan
+      - yifen
+      - nanoport
+    use:
+      - nanoport
+      - yiyuan
+      - yifen
+      
+  - name: yiyuan
+    type: url-test
+    interval: 60
+    use:
+      - yiyuan
+  
+  - name: yifen
+    type: url-test
+    interval: 60
+    use:
+      - yifen
+  
+  - name: nanoport
+    type: url-test
+    interval: 60
+    use:
+      - nanoport
+
+rule-providers:
+  reject:
+    type: http
+    behavior: domain
+    interval: 86400
+    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt
+
+rules:
+  # - SCRIPT,quic,REJECT
+  # YouTube
+  - GEOSITE,youtube,YouTube
+  # Netflix
+  - GEOSITE,netflix,Netflix
+  # Disney+
+  - GEOSITE,disney,Disney+
+  # TikTok
+  - GEOSITE,tiktok,TikTok
+  # OpenAI
+  - GEOSITE,openai,OpenAI
+  # Speedtest
+  - GEOSITE,speedtest,Speedtest
+  
+  - DOMAIN-SUFFIX,gamer.com.tw,🇹🇼 台湾
+  # Apple LBS
+  - DOMAIN-SUFFIX,iphone-ld.apple.com,DIRECT
+  - DOMAIN-SUFFIX,lcdn-locator.apple.com,DIRECT
+  - DOMAIN-SUFFIX,lcdn-registration.apple.com,DIRECT
+  - DOMAIN-SUFFIX,push.apple.com,DIRECT
+  # Apple OCSP
+  - PROCESS-NAME,trustd,PROXY
+  # Microsoft
+  - GEOSITE,microsoft@cn,DIRECT
+  - GEOSITE,microsoft,PROXY
+  - GEOSITE,xbox,PROXY
+  # Steam
+  - GEOSITE,steam@cn,DIRECT
+  - GEOSITE,steam,PROXY
+  
+  # common proxy utils
+  - PROCESS-NAME,v2ray,DIRECT
+  - PROCESS-NAME,Surge,DIRECT
+  - PROCESS-NAME,ss-local,DIRECT
+  - PROCESS-NAME,privoxy,DIRECT
+  - PROCESS-NAME,trojan,DIRECT
+  - PROCESS-NAME,trojan-go,DIRECT
+  - PROCESS-NAME,naive,DIRECT
+  - PROCESS-NAME,CloudflareWARP,DIRECT
+  - PROCESS-NAME,Cloudflare WARP,DIRECT
+  - IP-CIDR,162.159.193.0/24,DIRECT,no-resolve
+  - PROCESS-NAME,p4pclient,DIRECT
+  - PROCESS-NAME,Thunder,DIRECT
+  - PROCESS-NAME,DownloadService,DIRECT
+  - PROCESS-NAME,qbittorrent,DIRECT
+  - PROCESS-NAME,Transmission,DIRECT
+  - PROCESS-NAME,fdm,DIRECT
+  - PROCESS-NAME,aria2c,DIRECT
+  - PROCESS-NAME,Folx,DIRECT
+  - PROCESS-NAME,NetTransport,DIRECT
+  - PROCESS-NAME,uTorrent,DIRECT
+  - PROCESS-NAME,WebTorrent,DIRECT
+  - GEOIP,LAN,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,PROXY
+
+script:
+  shortcuts:
+    quic: network == 'udp' and dst_port == 443
+dns:
+  default-nameserver:
+    - 114.114.115.115
+    - 119.28.28.28
+    - 223.6.6.6
+    - system
+  nameserver:
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
+log-level: warning
+mode: rule
