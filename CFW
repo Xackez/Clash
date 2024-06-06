@@ -1,3 +1,8 @@
+mixed-port: 7890
+allow-lan: false
+external-controller: 127.0.0.1:63194
+secret: 52ca8cc5-1191-4cae-8ce6-ba170669c715
+
 proxy-providers:
   一元机场:
     type: http
@@ -306,18 +311,3 @@ rules:
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,PROXY
-
-script:
-  shortcuts:
-    quic: network == 'udp' and dst_port == 443
-dns:
-  default-nameserver:
-    - 114.114.115.115
-    - 119.28.28.28
-    - 223.6.6.6
-    - system
-  nameserver:
-    - https://dns.alidns.com/dns-query
-    - https://doh.pub/dns-query
-log-level: warning
-mode: rule
