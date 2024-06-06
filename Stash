@@ -211,12 +211,6 @@ proxy-groups:
       - nanoPort
 
 rule-providers:
-  reject:
-    type: http
-    behavior: domain
-    interval: 86400
-    url: https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt
-
   BanAD: 
     type: http
     behavior: classical
