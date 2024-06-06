@@ -113,6 +113,13 @@ proxy-groups:
       - 🇺🇲 美国
       - DIRECT
 
+  - name: 動畫瘋
+    icon: 
+    type: select
+    proxies:
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
+
   - name: 🇭🇰 香港
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Hong_Kong.png
     type: url-test
@@ -238,7 +245,7 @@ rules:
   # Speedtest
   - GEOSITE,speedtest,Speedtest
   
-  - DOMAIN-SUFFIX,gamer.com.tw,🇹🇼 台湾
+  - DOMAIN-SUFFIX,gamer.com.tw,動畫瘋
   # Apple LBS
   - DOMAIN-SUFFIX,iphone-ld.apple.com,DIRECT
   - DOMAIN-SUFFIX,lcdn-locator.apple.com,DIRECT
