@@ -1,15 +1,15 @@
 proxy-providers:
-  yiyuan:
+  一元机场:
     type: http
     url: https://sub.id9.cc/sub?target=clash&new_name=true&url=https%3A%2F%2Fsub2.smallstrawberry.com%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3D954b648f6fbe4b209795b9e2f5bbf2e1&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini
     interval: 86400
     filter: ^(?!.*(剩余|群组|到期|每月|官网|一元)).*
-  yifen:
+  一分机场:
     type: http
     url: https://www.yfjc.xyz/api/v1/client/subscribe?token=3b04f7cf400b0b4df6798dd7659fcc7e
     interval: 86400
     filter: ^(?!.*(剩余|群组|到期|每月|官网|一元)).*
-  nanoport:
+  nanoPort:
     type: http
     url: https://sub.id9.cc/sub?target=clash&new_name=true&url=https%3A%2F%2Fnano.nachoneko.cn%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3D2d502ca97e332c53ff350460a93e08d6&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini
     interval: 86400
@@ -99,26 +99,13 @@ proxy-groups:
       - 🇺🇲 美国
       - DIRECT
 
-  - name: Speedtest
-    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Speedtest.png
-    type: select
-    proxies:
-      - 自动选择
-      - 手动切换
-      - 🇭🇰 香港
-      - 🇹🇼 台湾
-      - 🇸🇬 新加坡
-      - 🇯🇵 日本
-      - 🇰🇷 韩国
-      - 🇺🇲 美国
-      - DIRECT
-
   - name: 動畫瘋
     icon: 
     type: select
     proxies:
       - 🇭🇰 香港
       - 🇹🇼 台湾
+      - DIRECT
 
   - name: 🇭🇰 香港
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Hong_Kong.png
@@ -127,9 +114,9 @@ proxy-groups:
     interval: 60
     filter: 香港|港
     use:
-      - nanoport
-      - yiyuan
-      - yifen
+      - 一元机场
+      - 一分机场
+      - nanoPort    
   
   - name: 🇹🇼 台湾
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Taiwan.png
@@ -138,9 +125,9 @@ proxy-groups:
     interval: 60
     filter: 台湾|台
     use:
-      - nanoport
-      - yiyuan
-      - yifen
+      - 一元机场
+      - 一分机场
+      - nanoPort
   
   - name: 🇸🇬 新加坡
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Singapore.png
@@ -149,9 +136,9 @@ proxy-groups:
     interval: 60
     filter: 狮城|新加坡
     use:
-      - nanoport
-      - yiyuan
-      - yifen
+      - 一元机场
+      - 一分机场
+      - nanoPort
   
   - name: 🇯🇵 日本
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Japan.png
@@ -160,9 +147,9 @@ proxy-groups:
     interval: 60
     filter: 日本
     use:
-      - nanoport
-      - yiyuan
-      - yifen
+      - 一元机场
+      - 一分机场
+      - nanoPort
   
   - name: 🇰🇷 韩国
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Korea.png
@@ -171,9 +158,9 @@ proxy-groups:
     interval: 60
     filter: 韩国
     use:
-      - nanoport
-      - yiyuan
-      - yifen
+      - 一元机场
+      - 一分机场
+      - nanoPort
   
   - name: 🇺🇲 美国
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/United_States.png
@@ -182,46 +169,46 @@ proxy-groups:
     interval: 60
     filter: 美国
     use:
-      - nanoport
-      - yiyuan
-      - yifen
+      - 一元机场
+      - 一分机场
+      - nanoPort
 
   - name: 自动选择
     type: url-test
     interval: 60
     use:
-      - nanoport
-      - yiyuan
-      - yifen
+      - 一元机场
+      - 一分机场
+      - nanoPort
   
   - name: 手动切换
     type: select
     proxies:
-      - yiyuan
-      - yifen
-      - nanoport
+      - 一元机场
+      - 一分机场
+      - nanoPort
     use:
-      - nanoport
-      - yiyuan
-      - yifen
+      - 一元机场
+      - 一分机场
+      - nanoPort
       
-  - name: yiyuan
+  - name: 一元机场
     type: url-test
     interval: 60
     use:
-      - yiyuan
+      - 一元机场
   
-  - name: yifen
+  - name: 一分机场
     type: url-test
     interval: 60
     use:
-      - yifen
+      - 一分机场
   
-  - name: nanoport
+  - name: nanoPort
     type: url-test
     interval: 60
     use:
-      - nanoport
+      - nanoPort
 
 rule-providers:
   reject:
@@ -242,10 +229,9 @@ rules:
   - GEOSITE,tiktok,TikTok
   # OpenAI
   - GEOSITE,openai,OpenAI
-  # Speedtest
-  - GEOSITE,speedtest,Speedtest
-  
+  # 動畫瘋
   - DOMAIN-SUFFIX,gamer.com.tw,動畫瘋
+
   # Apple LBS
   - DOMAIN-SUFFIX,iphone-ld.apple.com,DIRECT
   - DOMAIN-SUFFIX,lcdn-locator.apple.com,DIRECT
@@ -260,7 +246,6 @@ rules:
   # Steam
   - GEOSITE,steam@cn,DIRECT
   - GEOSITE,steam,PROXY
-  
   # common proxy utils
   - PROCESS-NAME,v2ray,DIRECT
   - PROCESS-NAME,Surge,DIRECT
