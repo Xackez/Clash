@@ -221,38 +221,38 @@ proxy-groups:
 rule-providers:
   BanAD: 
     type: http
-    behavior: classical
+    behavior: domain
     format: text
     interval: 86400
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanAD.yaml
 
   BanProgramAD: 
     type: http
-    behavior: classical
+    behavior: domain
     format: text
     interval: 86400
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanProgramAD.yaml
 
   BanEasyList: 
     type: http
-    behavior: classical
+    behavior: domain
     format: text
     interval: 86400
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyList.list
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanEasyList.yaml
 
   BanEasyListChina: 
     type: http
-    behavior: classical
+    behavior: domain
     format: text
     interval: 86400
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyListChina.list
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanEasyListChina.yaml
 
   BanEasyPrivacy: 
     type: http
-    behavior: classical
+    behavior: domain
     format: text
     interval: 86400
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyPrivacy.list
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanEasyPrivacy.yaml
 
   anti-AD: 
     type: http
@@ -262,7 +262,7 @@ rule-providers:
     url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml
 
 rules:
-  # - SCRIPT,quic,REJECT
+  - SCRIPT,quic,REJECT
 
   - RULE-SET,BanAD,REJECT
   - RULE-SET,BanProgramAD,REJECT
