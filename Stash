@@ -263,10 +263,10 @@ rule-providers:
 
   Bilibili: 
     type: http
-    behavior: classical
+    behavior: domain
     format: text
     interval: 86400
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list
+    url: https://clashios.app/static/rules/bilibili-classical-set.yaml
 
 rules:
   - SCRIPT,quic,REJECT
