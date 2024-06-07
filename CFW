@@ -77,7 +77,7 @@ proxy-groups:
       - DIRECT
  
   - name: Disney+
-    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Disney%2B.png
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Disney+.png
     type: select
     proxies:
       - 自动选择
@@ -91,7 +91,7 @@ proxy-groups:
       - DIRECT
 
   - name: OpenAI
-    icon: 
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Bot.png
     type: select
     proxies:
       - 自动选择
@@ -103,6 +103,14 @@ proxy-groups:
       - 🇰🇷 韩国
       - 🇺🇲 美国
       - DIRECT
+
+  - name: 哔哩哔哩
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/bilibili.png
+    type: select
+    proxies:
+      - DIRECT
+      - 🇭🇰 香港
+      - 🇹🇼 台湾
 
   - name: 動畫瘋
     icon: 
@@ -214,7 +222,7 @@ proxy-groups:
     interval: 60
     use:
       - nanoPort
-
+      
 rule-providers:
   BanAD: 
     type: http
@@ -244,6 +252,8 @@ rules:
   - GEOSITE,tiktok,TikTok
   # OpenAI
   - GEOSITE,openai,OpenAI
+  # 哔哩哔哩
+  - GEOSITE,bilibili,哔哩哔哩
   # 動畫瘋
   - DOMAIN-SUFFIX,gamer.com.tw,動畫瘋
 
