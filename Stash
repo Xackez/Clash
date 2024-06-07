@@ -222,47 +222,47 @@ rule-providers:
   BanAD: 
     type: http
     behavior: domain
-    format: text
+    format: yaml
     interval: 86400
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanAD.yaml
 
   BanProgramAD: 
     type: http
     behavior: domain
-    format: text
+    format: yaml
     interval: 86400
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanProgramAD.yaml
 
   BanEasyList: 
     type: http
     behavior: domain
-    format: text
+    format: yaml
     interval: 86400
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanEasyList.yaml
 
   BanEasyListChina: 
     type: http
     behavior: domain
-    format: text
+    format: yaml
     interval: 86400
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanEasyListChina.yaml
 
   BanEasyPrivacy: 
     type: http
     behavior: domain
-    format: text
+    format: yaml
     interval: 86400
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanEasyPrivacy.yaml
 
   anti-AD: 
     type: http
     behavior: domain
-    format: text
+    format: yaml
     interval: 86400
     url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml
 
 rules:
-  - SCRIPT,quic,REJECT
+  # - SCRIPT,quic,REJECT
 
   - RULE-SET,BanAD,REJECT
   - RULE-SET,BanProgramAD,REJECT
