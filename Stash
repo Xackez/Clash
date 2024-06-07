@@ -261,15 +261,8 @@ rule-providers:
     interval: 86400
     url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml
 
-  Bilibili: 
-    type: http
-    behavior: domain
-    format: text
-    interval: 86400
-    url: https://clashios.app/static/rules/bilibili-classical-set.yaml
-
 rules:
-  - SCRIPT,quic,REJECT
+  # - SCRIPT,quic,REJECT
 
   - RULE-SET,BanAD,REJECT
   - RULE-SET,BanProgramAD,REJECT
@@ -289,7 +282,7 @@ rules:
   # OpenAI
   - GEOSITE,openai,OpenAI
   # 哔哩哔哩
-  - RULE-SET,Bilibili,哔哩哔哩
+  - GEOSITE,bilibili,哔哩哔哩
   # 動畫瘋
   - DOMAIN-SUFFIX,gamer.com.tw,動畫瘋
 
