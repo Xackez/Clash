@@ -269,7 +269,7 @@ rules:
   - RULE-SET,BanEasyList,REJECT
   - RULE-SET,BanEasyListChina,REJECT
   # - RULE-SET,BanEasyPrivacy,REJECT
-  - RULE-SET,anti-AD,REJECT
+  # - RULE-SET,anti-AD,REJECT
 
   # YouTube
   - GEOSITE,youtube,YouTube
