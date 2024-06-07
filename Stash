@@ -256,7 +256,6 @@ rule-providers:
 rules:
   - SCRIPT,quic,REJECT
 
-  - IP-CIDR,180.76.76.200/32,REJECT
   - RULE-SET,BanAD,REJECT
   - RULE-SET,BanProgramAD,REJECT
   - RULE-SET,BanEasyList,REJECT
