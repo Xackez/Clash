@@ -230,43 +230,10 @@ rule-providers:
     interval: 86400
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
 
-  BanEasyList: 
-    type: http
-    behavior: classical
-    format: text
-    interval: 86400
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyList.list
-
-  BanEasyListChina: 
-    type: http
-    behavior: classical
-    format: text
-    interval: 86400
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyListChina.list
-
-  BanEasyPrivacy: 
-    type: http
-    behavior: classical
-    format: text
-    interval: 86400
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyPrivacy.list
-
-  anti-AD: 
-    type: http
-    behavior: domain
-    format: text
-    interval: 86400
-    url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml
-
 rules:
   - RULE-SET,BanAD,REJECT
   - RULE-SET,BanProgramAD,REJECT
-  # - RULE-SET,BanEasyList,REJECT
-  # - RULE-SET,BanEasyListChina,REJECT
-  # - RULE-SET,BanEasyPrivacy,REJECT
-  - RULE-SET,anti-AD,REJECT
 
-  # - SCRIPT,quic,REJECT
   # YouTube
   - GEOSITE,youtube,YouTube
   # Netflix
