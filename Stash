@@ -254,10 +254,11 @@ rule-providers:
     url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml
 
 rules:
+  - IP-CIDR,180.76.76.200/32,REJECT
   - RULE-SET,BanAD,REJECT
   - RULE-SET,BanProgramAD,REJECT
-  # - RULE-SET,BanEasyList,REJECT
-  # - RULE-SET,BanEasyListChina,REJECT
+  - RULE-SET,BanEasyList,REJECT
+  - RULE-SET,BanEasyListChina,REJECT
   # - RULE-SET,BanEasyPrivacy,REJECT
   - RULE-SET,anti-AD,REJECT
 
