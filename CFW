@@ -6,17 +6,17 @@ secret: 52ca8cc5-1191-4cae-8ce6-ba170669c715
 proxy-providers:
   一元机场:
     type: http
-    url: https://sub.id9.cc/sub?target=clash&new_name=true&url=https%3A%2F%2Fsub2.smallstrawberry.com%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3D954b648f6fbe4b209795b9e2f5bbf2e1&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini
+    url: https://sub2.smallstrawberry.com/api/v1/client/subscribe?token=954b648f6fbe4b209795b9e2f5bbf2e1
     interval: 86400
     filter: ^(?!.*(剩余|群组|到期|每月|官网|一元)).*
   一分机场:
     type: http
-    url: https://sub.id9.cc/sub?target=clash&new_name=true&url=https%3A%2F%2Fwww.yfjc.xyz%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3D3b04f7cf400b0b4df6798dd7659fcc7e&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini
+    url: https://dash.yfjc.xyz/api/v1/client/subscribe?token=3b04f7cf400b0b4df6798dd7659fcc7e&flag=meta
     interval: 86400
     filter: ^(?!.*(剩余|群组|到期|每月|官网|一元)).*
   nanoPort:
     type: http
-    url: https://sub.id9.cc/sub?target=clash&new_name=true&url=https%3A%2F%2Fnano.nachoneko.cn%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3D2d502ca97e332c53ff350460a93e08d6&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online.ini
+    url: https://nano.nachoneko.cn/api/v1/client/subscribe?token=2d502ca97e332c53ff350460a93e08d6
     interval: 86400
     filter: ^(?!.*(剩余|群组|到期|每月|官网|一元)).*
 
@@ -226,17 +226,17 @@ proxy-groups:
 rule-providers:
   BanAD: 
     type: http
-    behavior: classical
-    format: text
+    behavior: domain
+    format: yaml
     interval: 86400
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanAD.yaml
 
   BanProgramAD: 
     type: http
-    behavior: classical
-    format: text
+    behavior: domain
+    format: yaml
     interval: 86400
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanProgramAD.yaml
 
 rules:
   - RULE-SET,BanAD,REJECT
