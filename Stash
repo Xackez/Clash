@@ -249,7 +249,7 @@ rule-providers:
   anti-AD: 
     type: http
     behavior: domain
-    format: yaml
+    format: text
     interval: 86400
     url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml
 
