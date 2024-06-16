@@ -220,9 +220,9 @@ rule-providers:
     interval: 86400
 
 rules:
+  # 去广告
   - RULE-SET,BanAD,REJECT
   - RULE-SET,BanProgramAD,REJECT
-
   # YouTube
   - GEOSITE,youtube,YouTube
   # Netflix
@@ -239,7 +239,9 @@ rules:
   - DOMAIN-SUFFIX,gamer.com.tw,巴哈姆特
   # Instagram
   - GEOSITE,instagram,香港
-
+  # Steam
+  - GEOSITE,steam@cn,DIRECT
+  - GEOSITE,steam,Proxy
   # Apple LBS
   - DOMAIN-SUFFIX,iphone-ld.apple.com,DIRECT
   - DOMAIN-SUFFIX,lcdn-locator.apple.com,DIRECT
@@ -251,31 +253,7 @@ rules:
   - GEOSITE,microsoft@cn,DIRECT
   - GEOSITE,microsoft,Proxy
   - GEOSITE,xbox,Proxy
-  # Steam
-  - GEOSITE,steam@cn,DIRECT
-  - GEOSITE,steam,Proxy
   # common Proxy utils
-  - PROCESS-NAME,v2ray,DIRECT
-  - PROCESS-NAME,Surge,DIRECT
-  - PROCESS-NAME,ss-local,DIRECT
-  - PROCESS-NAME,privoxy,DIRECT
-  - PROCESS-NAME,trojan,DIRECT
-  - PROCESS-NAME,trojan-go,DIRECT
-  - PROCESS-NAME,naive,DIRECT
-  - PROCESS-NAME,CloudflareWARP,DIRECT
-  - PROCESS-NAME,Cloudflare WARP,DIRECT
-  - IP-CIDR,162.159.193.0/24,DIRECT,no-resolve
-  - PROCESS-NAME,p4pclient,DIRECT
-  - PROCESS-NAME,Thunder,DIRECT
-  - PROCESS-NAME,DownloadService,DIRECT
-  - PROCESS-NAME,qbittorrent,DIRECT
-  - PROCESS-NAME,Transmission,DIRECT
-  - PROCESS-NAME,fdm,DIRECT
-  - PROCESS-NAME,aria2c,DIRECT
-  - PROCESS-NAME,Folx,DIRECT
-  - PROCESS-NAME,NetTransport,DIRECT
-  - PROCESS-NAME,uTorrent,DIRECT
-  - PROCESS-NAME,WebTorrent,DIRECT
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,Proxy
