@@ -17,6 +17,7 @@ proxy-providers:
 
 proxy-groups:
   - name: PROXY
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Proxy.png
     type: select
     proxies:
       - 自动选择
@@ -108,7 +109,7 @@ proxy-groups:
       - 🇹🇼 台湾
 
   - name: 動畫瘋
-    icon: 
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Bahamut.png
     type: select
     proxies:
       - 🇭🇰 香港
@@ -180,6 +181,27 @@ proxy-groups:
       - 一元机场
       - 一分机场
       - nanoPort
+    
+  - name: 一元机场
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Airport.png
+    type: url-test
+    interval: 60
+    use:
+      - 一元机场
+  
+  - name: 一分机场
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Airport.png
+    type: url-test
+    interval: 60
+    use:
+      - 一分机场
+  
+  - name: nanoPort
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Airport.png
+    type: url-test
+    interval: 60
+    use:
+      - nanoPort
 
   - name: 自动选择
     type: url-test
@@ -198,24 +220,6 @@ proxy-groups:
     use:
       - 一元机场
       - 一分机场
-      - nanoPort
-      
-  - name: 一元机场
-    type: url-test
-    interval: 60
-    use:
-      - 一元机场
-  
-  - name: 一分机场
-    type: url-test
-    interval: 60
-    use:
-      - 一分机场
-  
-  - name: nanoPort
-    type: url-test
-    interval: 60
-    use:
       - nanoPort
 
 rule-providers:
