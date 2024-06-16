@@ -198,11 +198,14 @@ proxy-groups:
   - name: 手动选择
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Static.png
     type: select
-    include-all: true 
     proxies:
       - 一元机场
       - 一分机场
       - nanoPort 
+    use:
+      - 一元机场
+      - 一分机场
+      - nanoPort
 
 rule-providers:
   # BanAD: 
