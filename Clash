@@ -255,6 +255,8 @@ rules:
   - GEOSITE,bilibili,哔哩哔哩
   # 動畫瘋
   - DOMAIN-SUFFIX,gamer.com.tw,動畫瘋
+  # Instagram
+  - GEOSITE,instagram,🇭🇰 香港
 
   # Apple LBS
   - DOMAIN-SUFFIX,iphone-ld.apple.com,DIRECT
