@@ -16,7 +16,7 @@ proxy-providers:
     filter: ^(?!.*(剩余|群组|到期|每月|官网|一元)).*
 
 proxy-groups:
-  - name: PROXY
+  - name: Proxy
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Proxy.png
     type: select
     proxies:
@@ -280,15 +280,15 @@ rules:
   - DOMAIN-SUFFIX,lcdn-registration.apple.com,DIRECT
   - DOMAIN-SUFFIX,push.apple.com,DIRECT
   # Apple OCSP
-  - PROCESS-NAME,trustd,PROXY
+  - PROCESS-NAME,trustd,Proxy
   # Microsoft
   - GEOSITE,microsoft@cn,DIRECT
-  - GEOSITE,microsoft,PROXY
-  - GEOSITE,xbox,PROXY
+  - GEOSITE,microsoft,Proxy
+  - GEOSITE,xbox,Proxy
   # Steam
   - GEOSITE,steam@cn,DIRECT
-  - GEOSITE,steam,PROXY
-  # common proxy utils
+  - GEOSITE,steam,Proxy
+  # common Proxy utils
   - PROCESS-NAME,v2ray,DIRECT
   - PROCESS-NAME,Surge,DIRECT
   - PROCESS-NAME,ss-local,DIRECT
@@ -312,7 +312,7 @@ rules:
   - PROCESS-NAME,WebTorrent,DIRECT
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
-  - MATCH,PROXY
+  - MATCH,Proxy
 
 script:
   shortcuts:
