@@ -29,7 +29,7 @@ proxy-groups:
       - 韩国
       - 美国
       - DIRECT
-        
+       
   - name: YouTube
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/YouTube.png
     type: select
@@ -205,40 +205,40 @@ proxy-groups:
       - nanoPort 
 
 rule-providers:
-  BanAD: 
-    type: http
-    behavior: domain
-    format: yaml
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanAD.yaml
-    interval: 86400
+  # BanAD: 
+  #   type: http
+  #   behavior: domain
+  #   format: yaml
+  #   url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanAD.yaml
+  #   interval: 86400
 
-  BanProgramAD: 
-    type: http
-    behavior: domain
-    format: yaml
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanProgramAD.yaml
-    interval: 86400
+  # BanProgramAD: 
+  #   type: http
+  #   behavior: domain
+  #   format: yaml
+  #   url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanProgramAD.yaml
+  #   interval: 86400
 
-  BanEasyList: 
-    type: http
-    behavior: domain
-    format: yaml
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanEasyList.yaml
-    interval: 86400
+  # BanEasyList: 
+  #   type: http
+  #   behavior: domain
+  #   format: yaml
+  #   url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanEasyList.yaml
+  #   interval: 86400
 
-  BanEasyListChina: 
-    type: http
-    behavior: domain
-    format: yaml
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanEasyListChina.yaml
-    interval: 86400
+  # BanEasyListChina: 
+  #   type: http
+  #   behavior: domain
+  #   format: yaml
+  #   url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanEasyListChina.yaml
+  #   interval: 86400
 
-  BanEasyPrivacy: 
-    type: http
-    behavior: domain
-    format: yaml
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanEasyPrivacy.yaml
-    interval: 86400
+  # BanEasyPrivacy: 
+  #   type: http
+  #   behavior: domain
+  #   format: yaml
+  #   url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanEasyPrivacy.yaml
+  #   interval: 86400
 
   anti-AD: 
     type: http
@@ -249,14 +249,13 @@ rule-providers:
 
 rules:
   - SCRIPT,quic,REJECT
-
+  # 去广告
+  - RULE-SET,anti-AD,REJECT
   # - RULE-SET,BanAD,REJECT
   # - RULE-SET,BanProgramAD,REJECT
   # - RULE-SET,BanEasyList,REJECT
   # - RULE-SET,BanEasyListChina,REJECT
   # - RULE-SET,BanEasyPrivacy,REJECT
-  - RULE-SET,anti-AD,REJECT
-
   # YouTube
   - GEOSITE,youtube,YouTube
   # Netflix
@@ -273,7 +272,9 @@ rules:
   - DOMAIN-SUFFIX,gamer.com.tw,巴哈姆特
   # Instagram
   - GEOSITE,instagram,香港
-
+  # Steam
+  - GEOSITE,steam@cn,DIRECT
+  - GEOSITE,steam,Proxy
   # Apple LBS
   - DOMAIN-SUFFIX,iphone-ld.apple.com,DIRECT
   - DOMAIN-SUFFIX,lcdn-locator.apple.com,DIRECT
@@ -285,9 +286,6 @@ rules:
   - GEOSITE,microsoft@cn,DIRECT
   - GEOSITE,microsoft,Proxy
   - GEOSITE,xbox,Proxy
-  # Steam
-  - GEOSITE,steam@cn,DIRECT
-  - GEOSITE,steam,Proxy
   # common Proxy utils
   - PROCESS-NAME,v2ray,DIRECT
   - PROCESS-NAME,Surge,DIRECT
