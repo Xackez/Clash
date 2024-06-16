@@ -265,13 +265,6 @@ rule-providers:
     interval: 86400
     url: https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml
 
-  10007: 
-    type: http
-    behavior: domain
-    format: yaml
-    interval: 86400
-    url: https://raw.githubusercontent.com/lingeringsound/10007_auto/master/all
-
 rules:
   - SCRIPT,quic,REJECT
 
@@ -280,8 +273,7 @@ rules:
   # - RULE-SET,BanEasyList,REJECT
   # - RULE-SET,BanEasyListChina,REJECT
   # - RULE-SET,BanEasyPrivacy,REJECT
-  # - RULE-SET,anti-AD,REJECT
-  - RULE-SET,10007,REJECT
+  - RULE-SET,anti-AD,REJECT
 
   # YouTube
   - GEOSITE,youtube,YouTube
