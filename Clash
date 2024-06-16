@@ -22,12 +22,12 @@ proxy-groups:
     proxies:
       - 自动选择
       - 手动切换
-      - 🇭🇰 香港
-      - 🇹🇼 台湾
-      - 🇸🇬 新加坡
-      - 🇯🇵 日本
-      - 🇰🇷 韩国
-      - 🇺🇲 美国
+      - 香港
+      - 台湾
+      - 新加坡
+      - 日本
+      - 韩国
+      - 美国
       - DIRECT
         
   - name: YouTube
@@ -36,12 +36,12 @@ proxy-groups:
     proxies:
       - 自动选择
       - 手动切换
-      - 🇭🇰 香港
-      - 🇹🇼 台湾
-      - 🇸🇬 新加坡
-      - 🇯🇵 日本
-      - 🇰🇷 韩国
-      - 🇺🇲 美国
+      - 香港
+      - 台湾
+      - 新加坡
+      - 日本
+      - 韩国
+      - 美国
       - DIRECT
  
   - name: Netflix
@@ -50,12 +50,12 @@ proxy-groups:
     proxies:
       - 自动选择
       - 手动切换
-      - 🇭🇰 香港
-      - 🇹🇼 台湾
-      - 🇸🇬 新加坡
-      - 🇯🇵 日本
-      - 🇰🇷 韩国
-      - 🇺🇲 美国
+      - 香港
+      - 台湾
+      - 新加坡
+      - 日本
+      - 韩国
+      - 美国
       - DIRECT
 
   - name: TikTok
@@ -64,12 +64,12 @@ proxy-groups:
     proxies:
       - 自动选择
       - 手动切换
-      - 🇭🇰 香港
-      - 🇹🇼 台湾
-      - 🇸🇬 新加坡
-      - 🇯🇵 日本
-      - 🇰🇷 韩国
-      - 🇺🇲 美国
+      - 香港
+      - 台湾
+      - 新加坡
+      - 日本
+      - 韩国
+      - 美国
       - DIRECT
  
   - name: Disney+
@@ -78,12 +78,12 @@ proxy-groups:
     proxies:
       - 自动选择
       - 手动切换
-      - 🇭🇰 香港
-      - 🇹🇼 台湾
-      - 🇸🇬 新加坡
-      - 🇯🇵 日本
-      - 🇰🇷 韩国
-      - 🇺🇲 美国
+      - 香港
+      - 台湾
+      - 新加坡
+      - 日本
+      - 韩国
+      - 美国
       - DIRECT
 
   - name: OpenAI
@@ -92,12 +92,12 @@ proxy-groups:
     proxies:
       - 自动选择
       - 手动切换
-      - 🇭🇰 香港
-      - 🇹🇼 台湾
-      - 🇸🇬 新加坡
-      - 🇯🇵 日本
-      - 🇰🇷 韩国
-      - 🇺🇲 美国
+      - 香港
+      - 台湾
+      - 新加坡
+      - 日本
+      - 韩国
+      - 美国
       - DIRECT
 
   - name: 哔哩哔哩
@@ -105,18 +105,18 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - 🇭🇰 香港
-      - 🇹🇼 台湾
+      - 香港
+      - 台湾
 
   - name: 動畫瘋
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Bahamut.png
     type: select
     proxies:
-      - 🇭🇰 香港
-      - 🇹🇼 台湾
+      - 香港
+      - 台湾
       - DIRECT
 
-  - name: 🇭🇰 香港
+  - name: 香港
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Hong_Kong.png
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -127,7 +127,7 @@ proxy-groups:
       - 一分机场
       - nanoPort    
   
-  - name: 🇹🇼 台湾
+  - name: 台湾
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Taiwan.png
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -138,18 +138,18 @@ proxy-groups:
       - 一分机场
       - nanoPort
   
-  - name: 🇸🇬 新加坡
+  - name: 新加坡
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Singapore.png
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
-    filter: 狮城|新加坡
+    filter: 新加坡|狮城
     use:
       - 一元机场
       - 一分机场
       - nanoPort
   
-  - name: 🇯🇵 日本
+  - name: 日本
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Japan.png
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -160,7 +160,7 @@ proxy-groups:
       - 一分机场
       - nanoPort
   
-  - name: 🇰🇷 韩国
+  - name: 韩国
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Korea.png
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -171,7 +171,7 @@ proxy-groups:
       - 一分机场
       - nanoPort
   
-  - name: 🇺🇲 美国
+  - name: 美国
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/United_States.png
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -256,7 +256,7 @@ rules:
   # 動畫瘋
   - DOMAIN-SUFFIX,gamer.com.tw,動畫瘋
   # Instagram
-  - GEOSITE,instagram,🇭🇰 香港
+  - GEOSITE,instagram,香港
 
   # Apple LBS
   - DOMAIN-SUFFIX,iphone-ld.apple.com,DIRECT
