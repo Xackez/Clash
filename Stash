@@ -108,7 +108,7 @@ proxy-groups:
       - 香港
       - 台湾
 
-  - name: 動畫瘋
+  - name: 巴哈姆特
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Bahamut.png
     type: select
     proxies:
@@ -204,6 +204,7 @@ proxy-groups:
       - nanoPort
 
   - name: 自动选择
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Auto.png
     type: url-test
     interval: 60
     use:
@@ -212,6 +213,7 @@ proxy-groups:
       - nanoPort
   
   - name: 手动切换
+    icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Static.png
     type: select
     proxies:
       - 一元机场
@@ -287,8 +289,8 @@ rules:
   - GEOSITE,openai,OpenAI
   # 哔哩哔哩
   - GEOSITE,bilibili,哔哩哔哩
-  # 動畫瘋
-  - DOMAIN-SUFFIX,gamer.com.tw,動畫瘋
+  # 巴哈姆特
+  - DOMAIN-SUFFIX,gamer.com.tw,巴哈姆特
   # Instagram
   - GEOSITE,instagram,香港
 
