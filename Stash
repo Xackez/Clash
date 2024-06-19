@@ -26,7 +26,7 @@ proxy-groups:
     use:
       - 一元机场
       # - 一分机场 
-      - nanoPort
+      # - nanoPort
   
   - name: 手动选择
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Static.png
