@@ -1,15 +1,17 @@
 # Stash
-Proxy-providers:
+proxy-providers:
   一元机场:
     type: http
     url: https://sub3.smallstrawberry.com/api/v1/client/subscribe?token=ea5a88bcbb27f3f97a6a6e1858efb05e
     interval: 600
     filter: ^(?!.*(剩余|群组|到期|每月|官网|一元)).*
+
   一分机场:
     type: http
     url: https://www.yfjc.xyz/api/v1/client/subscribe?token=54a783cd157781921156bc75af112ed1
     interval: 600
     filter: ^(?!.*(剩余|群组|到期|每月|官网|一元)).*  
+
   nanoPort:
     type: http
     url: https://nano.nachoneko.cn/api/v1/client/subscribe?token=2d502ca97e332c53ff350460a93e08d6
