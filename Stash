@@ -280,6 +280,8 @@ rules:
   - DOMAIN-SUFFIX,gamer.com.tw,巴哈姆特
   # Instagram
   - GEOSITE,instagram,香港
+  # Facebook
+  - GEOSITE,facebook,香港
   # Apple LBS
   - DOMAIN-SUFFIX,iphone-ld.apple.com,DIRECT
   - DOMAIN-SUFFIX,lcdn-locator.apple.com,DIRECT
