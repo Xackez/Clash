@@ -9,13 +9,19 @@ proxy-providers:
     type: http
     url: https://www.yfjc.xyz/api/v1/client/subscribe?token=54a783cd157781921156bc75af112ed1
     interval: 600
-    filter: ^(?!.*(剩余|群组|到期|每月|官网|一元)).*  
+    filter: ^(?!.*(剩余|群组|到期|每月|官网)).*  
 
   nanoPort:
     type: http
     url: https://nano.nachoneko.cn/api/v1/client/subscribe?token=2d502ca97e332c53ff350460a93e08d6
     interval: 600
-    filter: ^(?!.*(剩余|群组|到期|每月|官网|一元)).*
+    filter: ^(?!.*(剩余|群组|到期|每月|官网)).*
+
+  大机场:
+    type: http
+    url: https://www2.bigairport-eighteenth-sub.top/api/v1/client/subscribe?token=c7e89b04d63087a38b76b6ff0983fded
+    interval: 600
+    filter: ^(?!.*(剩余|群组|到期|每月|官网)).*
 
 proxy-groups:
   - name: 自动选择
@@ -27,18 +33,21 @@ proxy-groups:
       - 一元机场
       # - 一分机场 
       # - nanoPort
+      - 大机场
   
   - name: 手动选择
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Static.png
     type: select
     proxies:
       - 一元机场
-      - 一分机场
-      - nanoPort 
+      # - 一分机场
+      # - nanoPort 
+      - 大机场
     use:
       - 一元机场
-      - 一分机场
-      - nanoPort
+      # - 一分机场
+      # - nanoPort
+      - 大机场
       
   - name: Proxy
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Proxy.png
