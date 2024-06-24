@@ -1,27 +1,28 @@
-# Stash 
+# Clash 
 proxy-providers:
   一元机场:
     type: http
     url: https://sub3.smallstrawberry.com/api/v1/client/subscribe?token=ea5a88bcbb27f3f97a6a6e1858efb05e
-    filter: ^(?!.*(剩余|到期|官网|群组|机场)).*
+    interval: 600
+    filter: ^(?!.*(剩余|到期|官网|群组|刷新|机场)).*
 
   一分机场:
     type: http
     url: https://www.yfjc.xyz/api/v1/client/subscribe?token=54a783cd157781921156bc75af112ed1
     interval: 600
-    filter: ^(?!.*(剩余|到期|官网|群组|机场)).*
-
+    filter: ^(?!.*(剩余|到期|官网|群组|刷新|机场)).*
+    
   nanoPort:
     type: http
     url: https://nano.nachoneko.cn/api/v1/client/subscribe?token=2d502ca97e332c53ff350460a93e08d6
     interval: 600
-    filter: ^(?!.*(剩余|到期|官网|群组|机场)).*
+    filter: ^(?!.*(剩余|到期|官网|群组|刷新|机场)).*
 
   大机场:
     type: http
     url: https://www2.bigairport-eighteenth-sub.top/api/v1/client/subscribe?token=c7e89b04d63087a38b76b6ff0983fded
     interval: 600
-    filter: ^(?!.*(剩余|到期|官网|群组|机场)).*
+    filter: ^(?!.*(剩余|到期|官网|群组|刷新|机场)).*
 
 proxy-groups:
   - name: 自动选择
