@@ -44,7 +44,7 @@ proxy-groups:
       # - nanoPort
       - 大机场
     proxies:
-      - 一元机场
+
       
   - name: Proxy
     icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Proxy.png
