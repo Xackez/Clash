@@ -17,6 +17,7 @@ payload:
   - DOMAIN-SUFFIX, sora.com
 
   # Copilot
+  - DOMAIN-SUFFIX,bing.com
   - DOMAIN, api.githubcopilot.com
   - DOMAIN, copilot-proxy.githubusercontent.com
   - DOMAIN, copilot.microsoft.com
