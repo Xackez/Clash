@@ -46,3 +46,79 @@ payload:
   - DOMAIN, jules.google.com
   - DOMAIN, labs.google
   - DOMAIN, aisandbox-pa.googleapis.com
+
+  # Google Antigravity
+  - DOMAIN, antigravity.google
+
+  # Anthropic
+  - DOMAIN-SUFFIX, anthropic.com
+  - DOMAIN-SUFFIX, claude.ai
+  - DOMAIN-SUFFIX, claudeusercontent.com
+  - IP-CIDR, 160.79.104.0/23, no-resolve
+  - IP-CIDR6, 2607:6bc0::/48, no-resolve
+
+  # JetBrains AI
+  - DOMAIN-SUFFIX, grazie.ai
+  - DOMAIN-SUFFIX, grazie.aws.intellij.net
+  - DOMAIN-SUFFIX, jetbrains.ai
+
+  # Meta AI
+  - DOMAIN, imagine.meta.com
+  - DOMAIN-SUFFIX, meta.ai
+
+  # Perplexity
+  - DOMAIN, pplx-res.cloudinary.com
+  - DOMAIN-SUFFIX, pplx.ai
+  - DOMAIN-SUFFIX, perplexity.ai
+  - DOMAIN-SUFFIX, perplexity.com
+
+  # Mistral AI
+  - DOMAIN, chat.mistral.ai
+  - DOMAIN, console.mistral.ai
+  - DOMAIN-SUFFIX, mistral.ai
+
+  # Grok AI
+  - DOMAIN, api.x.ai
+  - DOMAIN-SUFFIX, x.ai
+  - DOMAIN-SUFFIX, grok.com
+
+  # Trae AI
+  - DOMAIN, trae-api-sg.mchost.guru
+  - DOMAIN-SUFFIX, trae.ai
+
+  # OpenRouter
+  - DOMAIN-SUFFIX, openrouter.ai
+
+  # TokenFlux
+  - DOMAIN-SUFFIX, tokenflux.ai
+
+  # Groq
+  - DOMAIN-SUFFIX, groq.com
+
+  # Together
+  - DOMAIN-SUFFIX, together.ai
+
+  # Fireworks
+  - DOMAIN-SUFFIX, fireworks.ai
+
+  # Hyperbolic
+  - DOMAIN, api.hyperbolic.xyz
+  - DOMAIN-SUFFIX, hyperbolic.ai
+
+  # Mistral (duplicate group, kept as-is)
+  - DOMAIN-SUFFIX, mistral.ai
+
+  # Jina
+  - DOMAIN-SUFFIX, jina.ai
+
+  # GPUStack
+  # - DOMAIN-SUFFIX, gpustack.ai
+
+  # VoyageAI
+  - DOMAIN-SUFFIX, voyageai.com
+
+  # Vertex AI
+  - DOMAIN, aiplatform.googleapis.com
+
+  # Poe
+  - DOMAIN-SUFFIX, poe.com
