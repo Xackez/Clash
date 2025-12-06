@@ -1,10 +1,13 @@
 # =======================
 # OpenAI
 # =======================
+
+# AND 规则拆分（原 2 条 → 4 条）
 - DOMAIN-KEYWORD, chatgpt-async-webps-prod-
 - DOMAIN-SUFFIX, webpubsub.azure.com
 - DOMAIN-KEYWORD, openaicom-api-
 - DOMAIN-SUFFIX, azurefd.net
+
 - DOMAIN, chatgpt.livekit.cloud
 - DOMAIN, host.livekit.cloud
 - DOMAIN, openai.com.cdn.cloudflare.net
